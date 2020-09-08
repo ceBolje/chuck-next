@@ -11,7 +11,7 @@ export default function Pid(jokePid) {
 
     const handleNext = async () => {
         const json = await getRandomJoke();
-        router.push('http://localhost:3000/chuck/'+ json.id, undefined, { shallow: true })
+        router.push('/chuck/'+ json.id, undefined, { shallow: true })
 
         setNextStory(json);
     }
